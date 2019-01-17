@@ -68,28 +68,15 @@ xterm*|rxvt*)
     ;;
 esac
 
-export EDITOR='$(which subl) -w'
-#export EDITOR='mate_wait'
-#export GIT_EDITOR='mate -wl1'
-#export TEXEDIT='mate -w -l %d "%s"'
-#export LESSEDIT='mate -l %lm %f'
-
-export GREP_OPTIONS='--color=auto'
+[ -f "$(which subl)" ] && export EDITOR='$(which subl) -w'
 
 # added by travis gem
 [ -f /Users/hfreire/.travis/travis.sh ] && source /Users/hfreire/.travis/travis.sh
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
