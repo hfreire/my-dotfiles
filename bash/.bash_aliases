@@ -15,3 +15,5 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 alias syslog='journalctl -b -f --since "1 hour ago" | ccze -A -o nolookups'
+
+alias pico=nano
