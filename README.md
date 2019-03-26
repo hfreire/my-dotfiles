@@ -5,5 +5,5 @@ vim --noplugin -u .vimrc "+set hidden" "+syntax on" +PluginClean! +PluginInstall
 stow -t ~/ -D vim
 
 
-git subtree add --prefix vim/.vim/bundle/Vundle https://github.com/VundleVim/Vundle.vim.git master --squash
-git subtree pull --prefix vim/.vim/bundle/Vundle https://github.com/VundleVim/Vundle.vim.git master --squash
+git subtree add --prefix vim/.vim/bundle/Vundle.vim https://github.com/VundleVim/Vundle.vim.git master --squash
+git subtree pull --prefix vim/.vim/bundle/Vundle.vim https://github.com/VundleVim/Vundle.vim.git master --squash
