@@ -16,4 +16,5 @@ alias egrep='egrep --color=auto'
 
 alias syslog='journalctl -b -f --since "1 hour ago" | ccze -A -o nolookups'
 
+alias vim=vi
 alias pico=nano
