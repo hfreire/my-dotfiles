@@ -21,7 +21,6 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'nono/vim-handlebars'
 Plugin 'pangloss/vim-javascript'
-Plugin 'wookiehangover/jshint.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'slim-template/vim-slim'
@@ -75,7 +74,7 @@ set wildmenu                                                 " show a navigable 
 set wildmode=longest,list,full
 
 " Enable basic mouse behavior such as resizing buffers.
-set mouse=a
+set mouse=v
 if exists('$TMUX')  " Support resizing in tmux
   set ttymouse=xterm2
 endif
