@@ -1,3 +1,20 @@
+[user]
+	name = Hugo Freire
+	email = hfreire@exec.sh
+	signingkey = 7762C47191E92DC1
+[credential]
+	helper = osxkeychain
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/local/MacGPG2/bin/gpg2
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[tag]
+	forceSignAnnotated = true
 [color]
 	ui = auto
 [color "branch"]
@@ -13,18 +30,9 @@
 	added = yellow
 	changed = green
 	untracked = cyan
-[user]
-	name = Hugo Freire
-	email = hfreire@exec.sh
-	signingkey = 7095AA0D17CEC162
-[commit]
-	gpgsign = true
-[gpg]
-	program = /usr/local/MacGPG2/bin/gpg2
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-[tag]
-	forceSignAnnotated = true
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
+[push]
+	default = current
